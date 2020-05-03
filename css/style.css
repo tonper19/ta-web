@@ -1,169 +1,172 @@
-
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 1.5;
   /* same as above:
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   */
-  padding:0;
+  padding: 0;
   margin: 0;
   background-color: #f4f4f4;
 }
 
 /* Global */
-.container{
+.container {
   width: 80%;
   margin: auto;
   overflow: hidden;
 }
 
-ul{
+ul {
   margin: 0;
-  padding: 0:inherit;
+  padding: 0;
+  inherit;
 }
 
-.button_1{
+.button_1 {
   height: 38px;
-  background: #e8491d;
+  background: #dd8a36;
   border: none;
   padding-left: 20px;
   padding-right: 20px;
-  color: #ffffff;
+  color: #f2f0c4;
 }
 
-.dark{
+.dark {
   padding: 15px;
   background: #35424a;
-  color: #ffffff;
+  color: #f2f0c4;
   margin-top: 10px;
   margin-bottom: 10px;
 
 }
 
 /* header only */
-header{
-  background: #35424A;
-  color: #ffffff;
+header {
+  background: #313d7f;
+  /*#35424A;*/
+  color: #f2f0c4;
   padding-top: 30px;
   min-height: 70px;
-  border-bottom: #e8491d 3px solid;
+  border-bottom: #dd8a36 3px solid;
 }
 
-header a{
-  color: #ffffff;
+header a {
+  color: #f2f0c4;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
 }
 
-header li{
+header li {
   float: left;
   display: inline;
   padding: 0 20px 0 20px;
 }
 
-header #branding{
+header #branding {
   float: left;
 
 }
 
-header #branding h1{
+header #branding h1 {
   margin: 0;
 }
 
-header nav{
+header nav {
   float: right;
   margin-top: 10px;
 }
 
-header .highlight, header .current a{
-  color: #e8491d;
+header .highlight,
+header .current a {
+  color: #dd8a36;
   font-weight: bold;
 }
 
-header a:hover{
+header a:hover {
   color: #cccccc;
   font-weight: bold;
 }
 
 /* showcase */
 
-#showcase{
+#showcase {
   min-height: 400px;
   /* work with these values at the end to place the
     paragraph and showcase pic without disturbing each other*/
-  background:url('../img/showcase.jpg') no-repeat 0 -400px;
+  background: url('../img/showcase.jpg') no-repeat 0 -400px;
   text-align: center;
-  color: #ffffff;
+  color: #f2f0c4;
 }
 
-#showcase h1{
+#showcase h1 {
   margin-top: 100px;
   font-size: 55px;
   margin-bottom: 10px;
 
 }
 
-#showcase p{
+#showcase p {
   font-size: 20px;
 }
 
 /* newsletter */
-#newsletter{
+#newsletter {
   padding: 15px;
-  color: #ffffff;
-  background: #35424a;
+  color: #f2f0c4;
+  background: #313d7f;
 
 }
 
-#newsletter h1{
+#newsletter h1 {
   float: left;
 
 }
 
-#newsletter form{
-  float:right;
+#newsletter form {
+  float: right;
   margin-top: 15px;
 }
 
-#newsletter input[type="email"]{
+#newsletter input[type="email"] {
   padding: 4px;
   height: 25px;
   width: 250px;
 }
 
 /* boxes */
-#boxes{
+#boxes {
   margin-top: 20px;
 }
 
-#boxes .box{
-  float:left;
+#boxes .box {
+  float: left;
   text-align: center;
   width: 30%;
   padding: 10px;
 }
 
-#boxes .box img{
+#boxes .box img {
   width: 90px;
 }
 
 /* Sidebar */
-aside#sidebar{
+aside#sidebar {
   float: right;
   width: 30%;
   margin-top: 10px;
 }
 
-aside#sidebar .quote input, aside#sidebar .quote textarea{
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
   width: 90%;
   padding: 5px;
 }
 
 
 /* Main-col */
-article#main-col{
+article#main-col {
   float: left;
   width: 65%;
 
@@ -171,25 +174,26 @@ article#main-col{
 
 /* Services */
 
-ul#services li{
+ul#services li {
   list-style: none;
-  padding:20px;
+  padding: 20px;
   border: #cccccc solid 1px;
   margin-bottom: 5px;
   background: #e6e6e6;
 }
 
-footer{
+footer {
   padding: 20px;
   margin-top: 20px;
-  color: #ffffff;
-  background-color: #e8491d;
+  color: #f2f0c4;
+  background-color: #dd8a36;
   text-align: center;
 }
 
 /* Media Queries */
 /* if the width is less than 768 pixels, do the following: */
 @media (max-width: 768px) {
+
   header #branding,
   header nav,
   header nav li,
@@ -198,28 +202,28 @@ footer{
   section#boxes .box,
   article#main-col,
   aside#sidebar {
-    float:none;
+    float: none;
     text-align: center;
     width: 100%;
   }
 
-  header{
+  header {
     padding-bottom: 20px;
   }
 
-  #showcase h1{
+  #showcase h1 {
     margin-top: 40px;
   }
 
   #newsletter button,
-  .quote button{
+  .quote button {
     display: block;
     width: 100%;
   }
 
   #newsletter form input[type="email"],
   .quote input,
-  .quote textarea{
+  .quote textarea {
     width: 100%;
     margin-bottom: 5px;
   }
