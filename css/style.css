@@ -69,19 +69,23 @@ header #branding {
 
 }
 
-header #branding h1 {
+header #branding img {
   margin: 0;
 }
 
 header nav {
   float: right;
-  margin-top: 10px;
+  /* margin-top: 5px; */
 }
 
 header .highlight,
 header .current a {
   color: #dd8a36;
   font-weight: bold;
+}
+
+.techart {
+  text-align: center;
 }
 
 header a:hover {
@@ -95,7 +99,7 @@ header a:hover {
   min-height: 400px;
   /* work with these values at the end to place the
     paragraph and showcase pic without disturbing each other*/
-  background: url('../img/showcase.jpg') no-repeat 0 -400px;
+  background: url('../img/showcase.jpg') no-repeat 0 -200px;
   text-align: center;
   color: #f2f0c4;
 }
@@ -108,7 +112,7 @@ header a:hover {
 }
 
 #showcase p {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 /* newsletter */
