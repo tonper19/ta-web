@@ -19,8 +19,7 @@ body {
 
 ul {
   margin: 0;
-  padding: 0;
-  inherit;
+  padding: 10px;
 }
 
 .button_1 {
@@ -37,14 +36,23 @@ ul {
   background: #35424a;
   color: #f2f0c4;
   margin-top: 10px;
+  margin-bottom: 0;
+
+}
+
+.ul_dark {
+  padding-left: 50px;
+  background: #35424a;
+  color: #f2f0c4;
+  margin-left: 50 px;
   margin-bottom: 10px;
 
 }
 
 /* header only */
 header {
-  background: #313d7f;
-  /*#35424A;*/
+  /* background: #313d7f; */
+  background: url('../img/showcase.jpg') no-repeat 0 -35px;
   color: #f2f0c4;
   padding-top: 30px;
   min-height: 70px;
@@ -99,7 +107,7 @@ header a:hover {
   min-height: 400px;
   /* work with these values at the end to place the
     paragraph and showcase pic without disturbing each other*/
-  background: url('../img/showcase.jpg') no-repeat 0 -200px;
+  background: url('../img/showcase.jpg') no-repeat 0 -187px;
   text-align: center;
   color: #f2f0c4;
 }
@@ -141,7 +149,7 @@ header a:hover {
 
 /* boxes */
 #boxes {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #boxes .box {
@@ -153,6 +161,7 @@ header a:hover {
 
 #boxes .box img {
   width: 90px;
+  height: 90px;
 }
 
 /* Sidebar */
